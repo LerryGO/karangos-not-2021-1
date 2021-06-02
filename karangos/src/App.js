@@ -70,6 +70,10 @@ function Main() {
             <Route path="/new">
               <KarangosForm />
             </Route>
+            {/* :id é um parâmetro (nomes de paraâmetros começam com dois pontos) */}
+            <Route path="/edit/:id">
+              <KarangosForm />
+            </Route>
           </Switch>
         </Box>
         <FooterBar />
@@ -81,7 +85,7 @@ function Main() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Main />  
+      <Main />
     </ThemeProvider>
   );
 }
