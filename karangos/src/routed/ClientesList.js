@@ -48,6 +48,7 @@ export default function ClientesList() {
   
   const history = useHistory()
 
+  //Listagem de clientes
   useEffect(() => {
     //Atrasa a busca dos dados em 100ms
     setTimeout(() => getData(), 100)   

@@ -49,6 +49,7 @@ export default function KarangosList() {
   const history = useHistory()
 
   useEffect(() => {
+    //corrigindo o erro de nao atualizar tabela
     //Atrasa a busca dos dados em 100ms
     setTimeout(() => getData(), 100)   
   }, []) // Quando a lista de dependências é um vetor vazio, o useEffect()

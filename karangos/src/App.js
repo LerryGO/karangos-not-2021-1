@@ -81,6 +81,7 @@ import Button from '@material-ui/core/Button'
               <Route path="/editc/:id">
                 <ClientesForm />
               </Route>
+              {/* Parte dos clientes */}
               <Route path="/listc">
                 <ClientesList />
               </Route>
