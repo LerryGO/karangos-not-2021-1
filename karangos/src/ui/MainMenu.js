@@ -47,6 +47,13 @@ export default function MainMenu() {
         <MenuItem onClick={handleClose}>
           <Link className={classes.menuLink} to="/new">Cadastrar novo karango</Link>
         </MenuItem>
+        {/* Parte dos clientes */}
+        <MenuItem onClick={handleClose}>
+          <Link className={classes.menuLink} to="/listc">Listagem de Clientes</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link className={classes.menuLink} to="/newc">Cadastrar novo Cliente</Link>
+        </MenuItem>
       </Menu>
     </div>
   );
