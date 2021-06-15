@@ -42,6 +42,9 @@ export default function MainMenu() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
+          <Link to="/" className={classes.menuLink}>Home</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
           <Link className={classes.menuLink} to="/list">Listagem de karangos</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>

@@ -32,6 +32,7 @@ import Button from '@material-ui/core/Button'
   import KarangosForm from './routed/KarangosForm'
   import ClientesList from './routed/ClientesList'
   import ClientesForm from './routed/ClientesForm'
+  import HomePage  from './routed/HomePage';
   
   const theme = createMuiTheme({
     palette: {
@@ -67,6 +68,10 @@ import Button from '@material-ui/core/Button'
           <TopBar />
           <Box id="routed" className={classes.routed}>
             <Switch>
+              {/*Adicionando o HomePage*/}
+              <Route exact path="/">
+                <HomePage />
+              </Route>
               <Route path="/list">
                 <KarangosList />
               </Route>
